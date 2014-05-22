@@ -17,6 +17,7 @@ description = "cxf kata"
 applicationDefaultJvmArgs = ["-Dfile.encoding=UTF=8"]
 libsDirName = './target'
 
+
 sourceCompatibility = 1.8
 targetCompatibility = 1.8
 
@@ -48,6 +49,7 @@ sourceSets {
     }
 }
 ext{
+
 
     cxfVersion = '3.0.0'
     cxfArtifacts = [
@@ -139,7 +141,7 @@ jar {
 
     exclude 'META-INF/*.RSA', 'META-INF/*.SF','META-INF/*.DSA'
     manifest {
-        attributes 'Implementation-Title': 'Gradle cxf-kata',
+
         'Implementation-Version': version,
         'Built-By': System.getProperty('user.name'),
         'Built-Date': new Date(),
