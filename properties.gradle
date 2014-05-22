@@ -29,7 +29,7 @@ ext {
 
       guavaVersion = "16.0.1"
             
-      aspectJVersion = "1.7.4"
+      aspectJVersion = "1.8.0"
       javaVersion = "1.8"
 
       camelVersion  = "2.13.0"
