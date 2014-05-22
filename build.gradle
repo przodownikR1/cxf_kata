@@ -17,6 +17,7 @@ description = "cxf kata"
 applicationDefaultJvmArgs = ["-Dfile.encoding=UTF=8"]
 libsDirName = './target'
 
+
 sourceCompatibility = 1.8
 targetCompatibility = 1.8
 
@@ -49,6 +50,7 @@ sourceSets {
 }
 ext{
 
+4
     cxfVersion = '3.0.0'
     cxfArtifacts = [
         'cxf-rt-frontend-jaxws',
@@ -139,7 +141,8 @@ jar {
 
     exclude 'META-INF/*.RSA', 'META-INF/*.SF','META-INF/*.DSA'
     manifest {
-        attributes 'Implementation-Title': 'cxf-kata',
+
+         attributes 'Implementation-Title': 'cxf-kata',
         'Implementation-Version': version,
         'Built-By': System.getProperty('user.name'),
         'Built-Date': new Date(),
